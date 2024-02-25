@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .about-us,
+    .services {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .advantages {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .advantage-item {
+      display: inline-block;
+      background-color: #3498db;
+      color: #ffffff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .advantage-item:hover {
+      transform: scale(1.1);
+    }
+
+    @media screen and (max-width: 600px) {
+      .advantage-item {
+        display: block;
+        margin: 10px auto;
+      }
+    }
+
+    .contact-us,
+    .additional-info {
+      padding: 40px;
+      text-align: center;
+      background-color: #f0f0f0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    form button {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 600px) {
+
+      .about-us,
+      .services,
+      .advantages,
+      .contact-us,
+      .additional-info {
+        padding: 20px;
+      }
+
+      .services {
+        text-align: center;
+      }
+
+      .services-text {
+        margin-bottom: 20px;
+      }
+
+      .footer-sections {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    @media screen and (min-width: 601px) {
+      .footer-sections {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  </style>
+  <title>Personal Trainer</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="#about-us">Sobre Nós</a>
+      <a href="#services">Nossos Serviços</a>
+      <a href="#advantages">Vantagens</a>
+      <a href="#contact-us">Contato</a>
+      <a href="#additional-info">Informações</a>
+    </nav>
+  </header>
+
+  <section class="about-us" id="about-us">
+    <h2>Sobre Nós</h2>
+    <p>Somos uma equipe dedicada de personal trainers comprometidos em transformar vidas através do condicionamento físico e bem-estar.</p>
+  </section>
+
+  <section class="services" id="services">
+    <div class="services-text">
+      <h2>Nossos Serviços</h2>
+      <p>Oferecemos treinamentos personalizados, planos de dieta e acompanhamento constante para ajudar você a atingir seus objetivos de saúde e fitness.</p>
+    </div>
+    <img src="personal-1277392_1280.jpg" alt="Imagem de Nossos Serviços" class="services-image">
+  </section>
+
+  <section class="advantages" id="advantages">
+    <h2>Vantagens e Benefícios</h2>
+    <div class="advantage-item">Programas personalizados adaptados às suas necessidades</div>
+    <div class="advantage-item">Acompanhamento constante para otimizar seus resultados</div>
+    <div class="advantage-item">Experiência e conhecimento profundo em condicionamento físico</div>
+  </section>
+
+  <div class="footer-sections">
+    <section class="contact-us" id="contact-us">
+      <h2>Entre em Contato</h2>
+      <p>Estamos prontos para ajudar você a alcançar seus objetivos. Preencha o formulário abaixo e entraremos em contato em breve.</p>
+      <form>
+        <input type="email" placeholder="Seu Email" required>
+        <input type="tel" placeholder="Seu Número de Telefone" required>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section class="additional-info" id="additional-info">
+      <h2>Outras Informações</h2>
+      <p>Descubra mais sobre nós em nossas redes sociais. Siga-nos para dicas de saúde e motivação diária.</p>
+    </section>
+  </div>
+
+</body>
+
+</html>
